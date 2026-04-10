@@ -1,0 +1,281 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:500,400|IBM+Plex+Sans:500,400,600|Inter:400|Caveat:400|Poppins:500");
+
+:root {
+  --card-shadow: 5px 9px 0px 0px rgba(227, 232, 227, 0.67);
+  --deprecreated-button-large-font-family: "Inter", Helvetica;
+  --deprecreated-button-large-font-size: 18px;
+  --deprecreated-button-large-font-style: normal;
+  --deprecreated-button-large-font-weight: 400;
+  --deprecreated-button-large-letter-spacing: 0.20000000298023224px;
+  --deprecreated-button-large-line-height: 26px;
+  --deprecreated-button-small-font-family: "Inter", Helvetica;
+  --deprecreated-button-small-font-size: 14px;
+  --deprecreated-button-small-font-style: normal;
+  --deprecreated-button-small-font-weight: 400;
+  --deprecreated-button-small-letter-spacing: 0.20000000298023224px;
+  --deprecreated-button-small-line-height: 24px;
+  --global-intentsactionprimaryforegroundcolor: rgba(255, 255, 255, 1);
+  --heading-h1-heading-font-family: "IBM Plex Serif", Helvetica;
+  --heading-h1-heading-font-size: 54px;
+  --heading-h1-heading-font-style: normal;
+  --heading-h1-heading-font-weight: 400;
+  --heading-h1-heading-letter-spacing: 0px;
+  --heading-h1-heading-line-height: 100%;
+  --heading-h2-heading-font-family: "IBM Plex Serif", Helvetica;
+  --heading-h2-heading-font-size: 38px;
+  --heading-h2-heading-font-style: normal;
+  --heading-h2-heading-font-weight: 400;
+  --heading-h2-heading-letter-spacing: 0px;
+  --heading-h2-heading-line-height: 120.00000762939453%;
+  --heading-h4-heading-font-family: "IBM Plex Serif", Helvetica;
+  --heading-h4-heading-font-size: 22px;
+  --heading-h4-heading-font-style: normal;
+  --heading-h4-heading-font-weight: 500;
+  --heading-h4-heading-letter-spacing: 0px;
+  --heading-h4-heading-line-height: 120.00000762939453%;
+  --neutral-100: rgba(250, 252, 254, 1);
+  --neutral-300: rgba(199, 214, 230, 1);
+  --neutral-600: rgba(66, 95, 128, 1);
+  --neutral-900: rgba(21, 43, 71, 1);
+  --neutralneutral-400: rgba(181, 199, 217, 1);
+  --neutralneutral-600: rgba(66, 95, 128, 1);
+  --neutralneutral-800: rgba(33, 54, 80, 1);
+  --neutralwhite: rgba(255, 255, 255, 1);
+  --paragraph-paragraph-default-font-family: "IBM Plex Sans", Helvetica;
+  --paragraph-paragraph-default-font-size: 16px;
+  --paragraph-paragraph-default-font-style: normal;
+  --paragraph-paragraph-default-font-weight: 400;
+  --paragraph-paragraph-default-letter-spacing: 0px;
+  --paragraph-paragraph-default-line-height: 180%;
+  --paragraph-text-large-font-family: "IBM Plex Sans", Helvetica;
+  --paragraph-text-large-font-size: 20px;
+  --paragraph-text-large-font-style: normal;
+  --paragraph-text-large-font-weight: 400;
+  --paragraph-text-large-letter-spacing: 0px;
+  --paragraph-text-large-line-height: 150%;
+  --paragraph-text-small-font-family: "IBM Plex Sans", Helvetica;
+  --paragraph-text-small-font-size: 14px;
+  --paragraph-text-small-font-style: normal;
+  --paragraph-text-small-font-weight: 400;
+  --paragraph-text-small-letter-spacing: 0px;
+  --paragraph-text-small-line-height: 150%;
+  --primary-500: rgba(0, 157, 163, 1);
+  --primaryprimary-100: rgba(249, 250, 249, 1);
+  --primaryprimary-200: rgba(222, 233, 222, 1);
+  --primaryprimary-500: rgba(0, 157, 163, 1);
+  --primaryprimary-600: rgba(0, 129, 134, 1);
+  --primaryprimary-700: rgba(0, 98, 102, 1);
+  --secondarysecondary-300: rgba(241, 233, 213, 1);
+  --secondarysecondary-500: rgba(255, 205, 147, 1);
+  --secondarysecondary-800: rgba(82, 60, 0, 1);
+  --thumbnail-shadow: 10px 10px 20px 0px rgba(198, 210, 198, 0.25);
+  --utilities-button-small-font-family: "IBM Plex Sans", Helvetica;
+  --utilities-button-small-font-size: 14px;
+  --utilities-button-small-font-style: normal;
+  --utilities-button-small-font-weight: 500;
+  --utilities-button-small-letter-spacing: 0px;
+  --utilities-button-small-line-height: 100%;
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
