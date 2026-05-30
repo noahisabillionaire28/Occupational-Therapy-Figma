@@ -3,7 +3,7 @@ import { PositioningSection } from "./components/PositioningSection";
 import { CredibilitySection } from "./components/CredibilitySection";
 import { CapabilitiesSection } from "./components/CapabilitiesSection";
 import { AboutSection } from "./components/AboutSection";
-import { CtaBanner } from "./components/CtaBanner";
+import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
 
 export const OTLandingPage = (): JSX.Element => {
@@ -15,7 +15,7 @@ export const OTLandingPage = (): JSX.Element => {
         <CredibilitySection />
         <CapabilitiesSection />
         <AboutSection />
-        <CtaBanner />
+        <ContactSection />
       </main>
       <Footer />
     </div>

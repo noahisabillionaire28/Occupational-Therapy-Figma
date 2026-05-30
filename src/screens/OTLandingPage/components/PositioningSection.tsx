@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
-
 const conditionPills = [
   "Neurological Conditions",
   "Developmental Delays",
   "Post-Surgical Recovery",
   "Mobility Limitations",
-  "Paediatric Development",
+  "Pediatric Development",
   "Geriatric Independence",
 ];
 
@@ -18,7 +16,7 @@ export const PositioningSection = (): JSX.Element => {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6 lg:px-8 py-20 lg:py-28 w-full">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl animate-fade-up" style={{ animationDelay: "0s" }}>
           <p
             className="text-xs font-semibold tracking-widest text-teal-700 uppercase mb-6 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.1s", fontFamily: "'IBM Plex Sans', Helvetica" }}
@@ -27,7 +25,7 @@ export const PositioningSection = (): JSX.Element => {
           </p>
 
           <h1
-            className="text-4xl lg:text-5xl xl:text-6xl font-normal text-stone-800 mb-6 opacity-0 animate-fade-up"
+            className="text-4xl lg:text-5xl xl:text-6xl font-normal text-stone-800 leading-tight mb-6 opacity-0 animate-fade-up"
             style={{ animationDelay: "0.2s", fontFamily: "'IBM Plex Serif', Helvetica", lineHeight: "1.12" }}
           >
             Restoring Independence
@@ -36,17 +34,16 @@ export const PositioningSection = (): JSX.Element => {
           </h1>
 
           <p
-            className="text-lg text-stone-500 leading-relaxed max-w-xl mb-8 opacity-0 animate-fade-up"
+            className="text-lg text-stone-500 leading-relaxed max-w-xl mb-10 opacity-0 animate-fade-up"
             style={{ animationDelay: "0.35s", fontFamily: "'IBM Plex Sans', Helvetica" }}
           >
-            Targeted occupational therapy for people managing injuries, developmental delays,
-            neurological conditions, and mobility limitations — with a consistent focus on
-            measurable, meaningful functional improvement.
+            Targeted occupational therapy for individuals managing injuries, developmental delays,
+            neurological conditions, and mobility limitations — focused on measurable functional improvement.
           </p>
 
           <div
-            className="flex flex-wrap gap-2 mb-10 opacity-0 animate-fade-up"
-            style={{ animationDelay: "0.45s" }}
+            className="flex flex-wrap gap-2 opacity-0 animate-fade-up"
+            style={{ animationDelay: "0.5s" }}
           >
             {conditionPills.map((condition) => (
               <span
@@ -57,29 +54,6 @@ export const PositioningSection = (): JSX.Element => {
                 {condition}
               </span>
             ))}
-          </div>
-
-          <div
-            className="flex flex-wrap items-center gap-3 opacity-0 animate-fade-up"
-            style={{ animationDelay: "0.55s" }}
-          >
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-teal-700 text-white text-sm font-semibold rounded-lg hover:bg-teal-600 transition-colors duration-200"
-              style={{ fontFamily: "'IBM Plex Sans', Helvetica" }}
-            >
-              Make a Referral
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </Link>
-            <Link
-              to="/contact"
-              className="inline-flex items-center px-6 py-3 text-sm font-medium text-teal-700 border border-teal-300 rounded-lg hover:bg-teal-50 transition-colors duration-200"
-              style={{ fontFamily: "'IBM Plex Sans', Helvetica" }}
-            >
-              Request Information
-            </Link>
           </div>
         </div>
 
@@ -102,7 +76,7 @@ export const PositioningSection = (): JSX.Element => {
                 Evidence-Based Practice
               </p>
               <p className="text-sm font-semibold text-stone-800" style={{ fontFamily: "'IBM Plex Serif', Helvetica" }}>
-                Individualised Treatment Plans
+                Individualized Treatment Plans
               </p>
             </div>
           </div>
